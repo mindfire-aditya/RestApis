@@ -1,0 +1,8 @@
+<div class="childComponent">
+    <h2>Users List</h2>
+    <ul> 
+        <li (click)="onClick()" *ngFor="let u of users">
+            <strong>{{u.name}}</strong>
+        </li>
+    </ul>
+</div>
