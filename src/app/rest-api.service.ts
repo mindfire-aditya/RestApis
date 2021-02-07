@@ -10,14 +10,13 @@ import {throwError} from 'rxjs';
 })
 export class RestApiService {
 
-  private _rooturl = "https://jsonplaceholder.typicode.com/";
-  private _childurl = "";
-  private _url: string = "https://jsonplaceholder.typicode.com/users";
+  private _url: string = "https://jsonplaceholder.typicode.com/users/";
 
   constructor(private http: HttpClient) { }
 
-  getUsers(): Observable<IUsers[]>{
-    return this.http.get<IUsers[]>(this._url);
+  getUserWithId(id: number): Observable<IUsers>{
+    console.log(this._url + id);
+    return this.http.get<IUsers>(this._url + id);
   }
 
   errorHandler(error: HttpErrorResponse){

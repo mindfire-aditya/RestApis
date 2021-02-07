@@ -1,6 +1,9 @@
-<div class="childComponent">
+<div class="todos">
     <h2>Todos List</h2>
-    <ul> 
-        <li *ngFor="let t of todos">{{t.title}}</li>
-    </ul>
+    <ol> 
+        <li *ngFor="let t of todos">
+            <h3>{{t.title}}</h3>
+            <p><i *ngIf="!t.completed"></i></p>
+        </li>
+    </ol>
 </div>

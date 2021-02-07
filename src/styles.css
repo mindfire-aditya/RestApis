@@ -66,14 +66,8 @@ nav a:hover{
     background-color: #eee;
 }
 
-.childComponent li{
-    font-size: 1.3vw;
-    list-style: none;
-    padding: .8vw;
-    background-color: #ddd;
-    margin: 5px;
-    width: fit-content;
-    border-radius: 5px;
+.childComponent{
+    padding: 1vw;
 }
 
 .childComponent h2{
@@ -82,3 +76,44 @@ nav a:hover{
     border-bottom: 1px solid #777;
     padding: .5vw;
 }
+
+.user{
+    font-size: 1.3vw;
+    list-style: none;
+    padding: .8vw;
+    background-color: #ddd;
+    margin: 5px;
+    width: 40vw;
+    border-radius: 5px;
+    border-left: 2px solid #333;
+    max-height: fit-content;
+    transition: .3s;
+
+}
+
+.user:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+.userDetails{
+    padding: 1vw;
+    border-left: 4px solid #333;
+    border-radius: 3px;
+    background-color: #cce;
+    margin: 1vw;
+    font-style: italic;
+}
+
+.userDetails h3{
+    margin-bottom: 1vw;
+}
+
+.userDetails div{
+    margin-left: 1vw;
+    margin-bottom: .5vw;
+}
+
+span{
+    font-weight: bold;
+}
+

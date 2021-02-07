@@ -8,10 +8,8 @@ import {throwError} from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class RestApiService {
+export class UsersService {
 
-  private _rooturl = "https://jsonplaceholder.typicode.com/";
-  private _childurl = "";
   private _url: string = "https://jsonplaceholder.typicode.com/users";
 
   constructor(private http: HttpClient) { }

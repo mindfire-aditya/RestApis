@@ -1,6 +1,9 @@
-<div class="childComponent">
+<div class="posts">
     <h2>Posts List</h2>
     <ul> 
-        <li *ngFor="let p of posts">{{p.title}}</li>
+        <li *ngFor="let p of posts">
+            <h3>{{p.title}}</h3>
+            <p>{{p.body}}</p>
+        </li>
     </ul>
 </div>

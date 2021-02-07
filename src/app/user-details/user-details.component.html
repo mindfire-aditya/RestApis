@@ -1,1 +1,34 @@
-<p>user-details works!</p>
+<h3>You selected user with id: {{userId}}</h3>
+<button (click)="goPrevious()">Previous</button>
+<button (click)="goNext()">Next</button>
+
+<div class="userDetails">
+   
+    <h3>{{userDetail? userDetail.name: ""}}</h3>
+  
+    <div class="userId">
+        <label>Id: </label>
+        <span>{{userDetail? userDetail.id: ""}}</span>
+    </div>
+    <div class="username">
+        <label>Username: </label>
+        <span>{{userDetail? userDetail.username: ""}}</span>
+    </div>
+    <div class="userEmail">
+        <label>Email: </label>
+        <span>{{userDetail? userDetail.email: ""}}</span>
+    </div>
+    <div class="userAddress">
+        <label>Address: </label>
+        <span>{{userDetail? userDetail.street: ""+", "+ userDetail? userDetail.suite: ""+", "+ userDetail? userDetail.city: ""}}</span>
+    </div>
+    <div class="userPhone">
+        <label>Phone: </label>
+        <span>{{userDetail? userDetail.phone: ""}}</span>
+    </div>
+    <div class="userWebsite">
+        <label>Webiste: </label>
+        <span>{{userDetail? userDetail.website: ""}}</span>
+    </div>
+</div>
+
