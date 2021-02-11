@@ -1,34 +1,27 @@
-<h3>You selected user with id: {{userId}}</h3>
-<button (click)="goPrevious()">Previous</button>
-<button (click)="goNext()">Next</button>
-
 <div class="userDetails">
-   
-    <h3>{{userDetail? userDetail.name: ""}}</h3>
-  
-    <div class="userId">
-        <label>Id: </label>
-        <span>{{userDetail? userDetail.id: ""}}</span>
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">{{userDetail? userDetail.name: ""}}</h4>
+        <p class="card-text">
+            <i class="fa fa-user"></i> {{userDetail? userDetail.username: ""}}
+        </p>
+        <p class="card-text">
+            <i class="fa fa-envelope"></i> {{userDetail? userDetail.email: ""}}
+        </p>
+        <p class="card-text">
+            <i class="fa fa-phone"></i> {{userDetail? userDetail.phone: ""}}
+        </p>
+        <p class="card-text">
+            <i class="fa fa-link"></i> {{userDetail? userDetail.website: ""}}
+        </p>
+        <p class="card-text">
+            <i class="fa fa-briefcase"></i> {{userDetail? userDetail.company.name: ""}}
+        </p>
+        <p class="card-text">
+            <i class="fa fa-map-marker"></i> {{userDetail? userDetail.address.suite + ", " + userDetail.address.street + ", " + userDetail.address.city: ""}}
+        </p>
+
     </div>
-    <div class="username">
-        <label>Username: </label>
-        <span>{{userDetail? userDetail.username: ""}}</span>
-    </div>
-    <div class="userEmail">
-        <label>Email: </label>
-        <span>{{userDetail? userDetail.email: ""}}</span>
-    </div>
-    <div class="userAddress">
-        <label>Address: </label>
-        <span>{{userDetail? userDetail.street: ""+", "+ userDetail? userDetail.suite: ""+", "+ userDetail? userDetail.city: ""}}</span>
-    </div>
-    <div class="userPhone">
-        <label>Phone: </label>
-        <span>{{userDetail? userDetail.phone: ""}}</span>
-    </div>
-    <div class="userWebsite">
-        <label>Webiste: </label>
-        <span>{{userDetail? userDetail.website: ""}}</span>
-    </div>
+</div>
 </div>
 

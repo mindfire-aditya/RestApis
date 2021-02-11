@@ -1,9 +1,6 @@
-<div class="todos">
-    <h2>Todos List</h2>
-    <ol> 
-        <li *ngFor="let t of todos">
-            <h3>{{t.title}}</h3>
-            <p><i *ngIf="!t.completed"></i></p>
-        </li>
-    </ol>
+<div class="card" *ngFor="let todo of todos">
+    <div class="card-body">
+        <h4 class="card-title">{{todo.title | titlecase}}</h4>
+        <p class="card-text">{{todo.completed}}</p>
+    </div>
 </div>

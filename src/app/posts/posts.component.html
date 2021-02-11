@@ -1,9 +1,9 @@
-<div class="posts">
-    <h2>Posts List</h2>
-    <ul> 
-        <li *ngFor="let p of posts">
-            <h3>{{p.title}}</h3>
-            <p>{{p.body}}</p>
-        </li>
-    </ul>
+
+
+<div class="card" *ngFor="let post of posts">
+    <div class="card-body">
+        <h4 class="card-title">{{post.title | titlecase}}</h4>
+        <p>{{post.body}}</p>
+        <a href="#" class="card-link">User Id:{{post.userId}}</a>
+    </div>
 </div>

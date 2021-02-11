@@ -9,13 +9,13 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent, pathMatch: 'full'},
-  {path: 'users', component: UsersComponent},
-  {path: 'users/:id', component: UserDetailsComponent},
-  {path: 'posts', component: PostsComponent},
-  {path: 'comments', component: CommentsComponent},
-  {path: 'todos', component: TodosComponent}, 
-  {path: '**', component: PageNotFoundComponent}
+  { path: '', component: UsersComponent , pathMatch: 'full'},
+  { path: 'users', component: UsersComponent},
+  { path: 'users/:id', component: UserDetailsComponent},
+  { path: 'posts', component: PostsComponent},
+  { path: 'comments', component: CommentsComponent},
+  { path: 'todos', component: TodosComponent}, 
+  { path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
